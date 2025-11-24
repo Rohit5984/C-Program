@@ -1,0 +1,24 @@
+#include <cstdio>
+
+void checkRectangle(float length, float breadth);
+
+int main() 
+{
+    float length, breadth;
+
+    printf("Enter length and breadth of rectangle: ");
+    scanf("%f %f", &length, &breadth);
+
+    checkRectangle(length, breadth);
+
+    return 0;
+}
+
+void checkRectangle(float length, float breadth) 
+{
+    float perimeter = 2 * (length + breadth);
+    float area = length * breadth;
+
+    printf("Perimeter of rectangle = %.2f\n", perimeter);
+    printf("Area of rectangle = %.2f\n", area);
+}
