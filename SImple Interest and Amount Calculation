@@ -1,0 +1,23 @@
+#include <cstdio>
+
+void checkInterest(float P, float R, float T);
+
+int main() 
+{
+    float P, R, T;
+
+    printf("Enter Principal, Rate and Time: ");
+    scanf("%f %f %f", &P, &R, &T);
+
+    checkInterest(P, R, T);
+
+    return 0;
+}
+
+void checkInterest(float P, float R, float T) 
+{
+    float SI = (P * R * T) / 100;
+    float Amount = P + SI;
+    printf("Simple Interest = %.2f\n", SI);
+    printf("Total Amount = %.2f\n", Amount);
+}
