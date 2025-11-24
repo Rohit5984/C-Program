@@ -1,0 +1,20 @@
+#include <cstdio>
+
+void checkCircumference(float r);
+
+int main() 
+{
+    float r;
+   printf("Enter radius of circle: ");
+    scanf("%f", &r);
+
+    checkCircumference(r);
+
+    return 0;
+}
+
+void checkCircumference(float r) 
+{
+    float circumference = 2 * 3.1416 * r;  // formula
+    printf("Circumference of circle = %.2f\n", circumference);
+}
