@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+void convertNPRtoINR(float npr);
+
+int main() {
+    float npr;
+    printf("Enter amount in Nepali Rupees (NPR): ");
+    scanf("%f", &npr);
+
+    convertNPRtoINR(npr);
+    return 0;
+}
+
+void convertNPRtoINR(float npr) {
+    float inr = npr / 1.6;  // formula inside function
+    printf("%.2f NPR = %.2f INR\n", npr, inr);
+}
+
+/* Example Output =>
+   Enter amount in Nepali Rupees (NPR): 160
+   160.00 NPR = 100.00 INR
+*/
